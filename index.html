@@ -1,111 +1,283 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/gh/creativetimofficial/tailwind-starter-kit/compiled-tailwind.min.css"
-    />
-    <title>natresearch</title>
-  </head>
-  <body class="text-gray-800 antialiased">
-    <nav class="bg-white shadow-lg">
-			<div class="max-w-6xl mx-auto px-4">
-				<div class="flex justify-between">
-					<div class="flex space-x-7">
-						<div>
-							<!-- Website Logo -->
-							<a href="#" class="flex items-center py-4 px-2">
-								<img src="" alt="Logo" class="h-8 w-8 mr-2">
-								<span class="font-semibold text-gray-500 text-lg">Natresearch</span>
-							</a>
-						</div>
-						<!-- Primary Navbar items -->
-						<div class="hidden md:flex items-center space-x-1">
-							<a href="" class="py-4 px-2 text-green-500 border-b-4 border-green-500 font-semibold ">Home</a>
-							<a href="" class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300">Services</a>
-							<a href="" class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300">About</a>
-							<a href="" class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300">Contact Us</a>
-						</div>
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+	<link rel="stylesheet"
+		href="https://cdn.jsdelivr.net/gh/creativetimofficial/tailwind-starter-kit/compiled-tailwind.min.css" />
+	<title>natresearch</title>
+</head>
+
+<body class="text-gray-800 antialiased">
+	<nav class="bg-white shadow-lg">
+		<div class="max-w-6xl mx-auto px-4">
+			<div class="flex justify-between">
+				<div class="flex space-x-7">
+					<div>
+						<!-- Website Logo -->
+						<a href="#" class="flex items-center py-4 px-2">
+							<img src="logo2.jpg" alt="Logo" class="h-8 w-8 mr-2">
+							<span class="font-semibold text-gray-500 text-lg">National Research Consultancy</span>
+						</a>
 					</div>
-					<!-- Secondary Navbar items -->
-					<div class="hidden md:flex items-center space-x-3 ">
-						<a href="" class="py-2 px-2 font-medium text-gray-500 rounded hover:bg-green-500 hover:text-white transition duration-300">Log In</a>
-						<a href="" class="py-2 px-2 font-medium text-white bg-green-500 rounded hover:bg-green-400 transition duration-300">Sign Up</a>
+					<!-- Primary Navbar items -->
+					<div class="hidden md:flex items-center space-x-1">
+						<a href="" class="py-4 px-2 text-green-500 border-b-4 border-green-500 font-semibold ">Home</a>
+						<a href=""
+							class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300">Services</a>
+						<a href=""
+							class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300">About</a>
+						<a href=""
+							class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300">Contact
+							Us</a>
 					</div>
-					<!-- Mobile menu button -->
-					<div class="md:hidden flex items-center">
-						<button class="outline-none mobile-menu-button">
-						<svg class=" w-6 h-6 text-gray-500 hover:text-green-500 "
-							x-show="!showMenu"
-							fill="none"
-							stroke-linecap="round"
-							stroke-linejoin="round"
-							stroke-width="2"
-							viewBox="0 0 24 24"
-							stroke="currentColor"
-						>
+				</div>
+				<!-- Secondary Navbar items -->
+				<div class="hidden md:flex items-center space-x-3 ">
+					<a href=""
+						class="py-2 px-2 font-medium text-gray-500 rounded hover:bg-green-500 hover:text-white transition duration-300">Log
+						In</a>
+					<a href=""
+						class="py-2 px-2 font-medium text-white bg-green-500 rounded hover:bg-green-400 transition duration-300">Request
+						a quote
+					</a>
+				</div>
+				<!-- Mobile menu button -->
+				<div class="md:hidden flex items-center">
+					<button class="outline-none mobile-menu-button">
+						<svg class=" w-6 h-6 text-gray-500 hover:text-green-500 " x-show="!showMenu" fill="none"
+							stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"
+							stroke="currentColor">
 							<path d="M4 6h16M4 12h16M4 18h16"></path>
 						</svg>
 					</button>
+				</div>
+			</div>
+		</div>
+		<!-- mobile menu -->
+		<div class="hidden mobile-menu">
+			<ul class="">
+				<li class="active"><a href="index.html"
+						class="block text-sm px-2 py-4 text-white bg-green-500 font-semibold">Home</a></li>
+				<li><a href="#services"
+						class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Services</a></li>
+				<li><a href="#about"
+						class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">About</a></li>
+				<li><a href="#contact"
+						class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Contact Us</a></li>
+			</ul>
+		</div>
+
+	</nav>
+
+	<div class="relative pt-16 pb-32 flex content-center items-center justify-center" style="min-height: 75vh;">
+		<div class="absolute top-0 w-full h-full bg-center bg-cover"
+			style='background-image: url("banner.jpg");'>
+			<span id="blackOverlay" class="w-full h-full absolute opacity-75 bg-blue"></span>
+		</div>
+		<div class="container relative mx-auto">
+			<div class="items-center flex flex-wrap">
+				<div class="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
+					<div class="pr-12">
+						<h1 class="text-blue-600 font-semibold text-5xl">
+							Your story starts with us.
+						</h1>
+						<p class="mt-4 text-lg text-green">
+							Economy, Originality, Punctuality and Quality
+						</p>
 					</div>
 				</div>
 			</div>
-			<!-- mobile menu -->
-			<div class="hidden mobile-menu">
-				<ul class="">
-					<li class="active"><a href="index.html" class="block text-sm px-2 py-4 text-white bg-green-500 font-semibold">Home</a></li>
-					<li><a href="#services" class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Services</a></li>
-					<li><a href="#about" class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">About</a></li>
-					<li><a href="#contact" class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Contact Us</a></li>
-				</ul>
-			</div>
-			
-		</nav>
-		
-		 <div
-        class="relative pt-16 pb-32 flex content-center items-center justify-center"
-        style="min-height: 75vh;"
-      >
-        <div
-          class="absolute top-0 w-full h-full bg-center bg-cover"
-          style='background-image: url("https://images.unsplash.com/photo-1577563908411-5077b6dc7624?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80");'
-        >
-          <span
-            id="blackOverlay"
-            class="w-full h-full absolute opacity-75 bg-black"
-          ></span>
-        </div>
-        <div class="container relative mx-auto">
-          <div class="items-center flex flex-wrap">
-            <div class="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
-              <div class="pr-12">
-                <h1 class="text-white font-semibold text-5xl">
-                  Your story starts with us.
-                </h1>
-                <p class="mt-4 text-lg text-gray-300">
-                  This is a simple example of a Landing Page you can build using
-                  Tailwind Starter Kit. It features multiple CSS components
-                  based on the Tailwindcss design system.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-  </body>
-  <script>
-    const btn = document.querySelector("button.mobile-menu-button");
-				const menu = document.querySelector(".mobile-menu");
+		</div>
+		<div class="top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden"
+			style="height: 70px;">
+			<svg class="absolute bottom-0 overflow-hidden" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"
+				version="1.1" viewBox="0 0 2560 100" x="0" y="0">
+				<polygon class="text-gray-300 fill-current" points="2560 0 2560 100 0 100"></polygon>
+			</svg>
+		</div>
+	</div>
 
-				btn.addEventListener("click", () => {
-					menu.classList.toggle("hidden");
-				});
-    
-  </script>
+
+	<section class="pb-20 bg-gray-300 -mt-24">
+		<div class="container mx-auto px-4">
+			<div class="flex flex-wrap">
+				<div class="lg:pt-12 pt-6 w-full md:w-4/12 px-4 text-center">
+					<div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
+						<div class="px-4 py-5 flex-auto">
+							<div
+								class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-red-400">
+								<i class="fas fa-award"></i>
+							</div>
+							<h6 class="text-xl font-semibold">Manual Service</h6>
+							<p class="mt-2 mb-4 text-gray-600">
+								We never make use of any software or online tools for plagiarism removal, copy editing
+								or writing.
+
+
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="w-full md:w-4/12 px-4 text-center">
+					<div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
+						<div class="px-4 py-5 flex-auto">
+							<div
+								class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-blue-400">
+								<i class="fas fa-retweet"></i>
+							</div>
+							<h6 class="text-xl font-semibold">Confidentiality</h6>
+							<p class="mt-2 mb-4 text-gray-600">
+								We never share the completed and submitted works of our clients to anyone not even as a
+								sample.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="pt-6 w-full md:w-4/12 px-4 text-center">
+					<div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
+						<div class="px-4 py-5 flex-auto">
+							<div
+								class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-green-400">
+								<i class="fas fa-fingerprint"></i>
+							</div>
+							<h6 class="text-xl font-semibold">Client Satisfication</h6>
+							<p class="mt-2 mb-4 text-gray-600">
+								The client and the safety of their data is ensured.
+								At every stage we ensure that the clients are satisfied.
+
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<section class="text-gray-600 body-font bg-white shadow-2xl">
+				<div class="container px-5 py-2 mx-auto">
+				  <div class="flex flex-col w-full mb-20">
+					<h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">About Us</h1>
+					<p class="lg:w-2/3 mx-auto leading-relaxed text-base">National Research consultancy is inaugurated in the Manchester city of Tamilnadu, Coimbatore in the year 2015 with a motto of facilitating research community in the production of quality, accurate and effective research on time</p>
+				  </div>
+				  <div class="container mx-auto p-6">
+					<div class="flex flex-wrap text-center">
+						<div class="flex-grow">
+							<h2 class="title-font font-medium sm:text-4xl text-3xl text-gray-900">108</h2>
+							<p class="leading-relaxed">Theses</p>
+						</div>
+						<div class="flex-grow">
+							<h2 class="title-font font-medium sm:text-4xl text-3xl text-gray-900">1217</h2>
+							<p class="leading-relaxed">Research Articles</p>
+						</div>
+						<div class="flex-grow">
+							<h2 class="title-font font-medium sm:text-4xl text-3xl text-gray-900">500</h2>
+							<p class="leading-relaxed">Scholars</p>
+						</div>
+						<div class="flex-grow">
+							<h2 class="title-font font-medium sm:text-4xl text-3xl text-gray-900">4</h2>
+							<p class="leading-relaxed">Services</p>
+						</div>
+					</div>
+				</div>
+				</div>
+			  </section>
+
+			<div class="flex flex-wrap items-center mt-32">
+				<div class="w-full md:w-5/12 px-4 mr-auto ml-auto">
+					<div
+						class="text-gray-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-gray-100">
+						<i class="fas fa-user-friends text-xl"></i>
+					</div>
+					<h3 class="text-3xl mb-2 font-semibold leading-normal">
+						Working with us is a pleasure
+					</h3>
+					<p class="text-lg font-light leading-relaxed mt-4 mb-4 text-gray-700">
+						All our services are purely original in the sense we never lift any previous research on the specific area. It is our commitment to our clients.
+					</p>
+					<p class="text-lg font-light leading-relaxed mt-0 mb-4 text-gray-700">
+						We have a set of subject experts for each domain who are all doctorates in the respective branch. All works are done manually by the subject expert, reviewed by another expert and scanned for originality before handing over to the client.
+					</p>
+					<a href=""
+						class="py-2 px-2 font-medium text-white bg-green-500 rounded hover:bg-green-400 transition duration-300">Request
+						a quote
+					</a>
+				</div>
+				<div class="w-full md:w-4/12 px-4 mr-auto ml-auto">
+					<div
+						class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg bg-pink-600">
+						<img alt="..."
+							src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1051&amp;q=80"
+							class="w-full align-middle rounded-t-lg" />
+						<blockquote class="relative p-8 mb-4">
+							<svg preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 583 95"
+								class="absolute left-0 w-full block" style="height: 95px; top: -94px;">
+								<polygon points="-30,95 583,95 583,65" class="text-pink-600 fill-current"></polygon>
+							</svg>
+							<h4 class="text-xl font-bold text-white">
+								Top Notch Services
+							</h4>
+							<p class="text-md font-light mt-2 text-white">
+								We have a set of subject experts for each domain who are all doctorates in the
+								respective branch. 	</p>
+							<p class="text-md font-light mt-2 text-white">
+								All works are done manually by the subject expert, reviewed by
+								another expert and scanned for originality before handing over to the client.
+						
+							</p>
+						</blockquote>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	
+
+	<section class="relative pt-20">
+		<div class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
+			style="height: 80px;">
+			<svg class="absolute bottom-0 overflow-hidden" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"
+				version="1.1" viewBox="0 0 2560 100" x="0" y="0">
+				<polygon class="text-white fill-current" points="2560 0 2560 100 0 100"></polygon>
+			</svg>
+		</div>
+		<div class="container mx-auto px-4">
+			<div class="items-center flex flex-wrap">
+				<div class="w-full md:w-4/12 ml-auto mr-auto px-4">
+					<img alt="..." class="max-w-full rounded-lg shadow-lg"
+						src="https://images.unsplash.com/photo-1555212697-194d092e3b8f?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=634&amp;q=80" />
+				</div>
+				<div class="w-full md:w-5/12 ml-auto mr-auto px-4">
+					<div class="md:pr-12">
+						<div
+							class="text-pink-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-pink-300">
+							<i class="fas fa-rocket text-xl"></i>
+						</div>
+						<h3 class="text-3xl font-semibold">A growing consultancy</h3>
+						<p class="mt-4 text-lg leading-relaxed text-gray-600">
+							Stepping into the sixth year, our consulting has helped scholars from various disciplines
+							across the globe to produce 108 theses and 1217 research articles.
+						</p>
+						<p class="mt-4 text-lg leading-relaxed text-gray-600">
+						Besides, the consultancy has helped around 500 scholars in copy editing, plagiarism removal, data analysis, collection of samples, literature review, topic selection, publication of research papers and statistical tools. 
+					</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+</body>
+<script>
+	const btn = document.querySelector("button.mobile-menu-button");
+	const menu = document.querySelector(".mobile-menu");
+
+	btn.addEventListener("click", () => {
+		menu.classList.toggle("hidden");
+	});
+
+</script>
+
 </html>
