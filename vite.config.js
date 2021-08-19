@@ -1,7 +1,13 @@
 module.exports = {
    
     build: {
-      outDir: 'docs'
+      outDir: 'docs',
+      rollupOptions: {
+        input:{
+          index:'index.html',
+          request:'request.html'
+        }
+      }
     }
   }
   
