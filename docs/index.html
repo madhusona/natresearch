@@ -9,8 +9,8 @@
 	
 
 	<title>natresearch</title>
-  <script type="module" crossorigin src="./assets/index.a2aa1c5a.js"></script>
-    <link rel="stylesheet" href="./assets/tailwind.b8073b54.css">
+  <script type="module" crossorigin src="./assets/index.9b08b577.js"></script>
+    <link rel="stylesheet" href="./assets/tailwind.75db5f95.css">
   </head>
 
 <body class="text-gray-800 antialiased">
@@ -50,7 +50,7 @@
 					a quote
 				</a>
 					<a href="https://pages.razorpay.com/pl_Gy5u2SUUqTnRkG/view" target="_blank"
-						class="py-2 px-2 font-medium text-white bg-green-500 rounded hover:bg-green-400 transition duration-300"> Payment
+						class="py-2 px-2 font-medium text-white bg-green-500 rounded hover:bg-green-400 transition duration-300"> Pay Now
 					</a>
 				</div>
 				<!-- Mobile menu button -->
@@ -108,7 +108,7 @@
 				</a>
 
 						<a href="https://pages.razorpay.com/pl_Gy5u2SUUqTnRkG/view" target="_blank"
-						class="md:hidden py-2 px-2 mt-10 font-medium text-white bg-green-500 rounded hover:bg-green-400 transition duration-300"> Payment
+						class="md:hidden py-2 px-2 mt-10 font-medium text-white bg-green-500 rounded hover:bg-green-400 transition duration-300"> Pay Now
 					</a>
 				</div>
 					</div>
@@ -183,7 +183,7 @@
 
 
 		<section class=" container text-white body-font shadow-1xl" id="about">
-			<div class="container px-2 mx-2 items-center">
+			<div class="container px-5 py-2 mx-auto">
 				<div class="flex flex-col w-full mb-5">
 					<h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-black text-center">About Us</h1>
 					<p class="leading-relaxed text-black">National Research consultancy is inaugurated in the Manchester
@@ -228,7 +228,7 @@
 							</div>
 							<h3 class="text-3xl font-semibold">A growing consultancy</h3>
 							<p class="mt-4 text-lg leading-relaxed text-gray-600">
-								Stepping into the sixth year, our consulting has helped scholars from various
+								Stepping into the sixth year, our consultancy has helped scholars from various
 								disciplines
 								across the globe to produce 108 theses and 1217 research articles.
 							</p>
@@ -482,6 +482,7 @@
 			fetch(scriptURL, { method: 'POST', body: new FormData(form) })
 				.then(response => {
 					console.log('Success!', response)
+					alert("Successfully Submitted");
 					spin.classList.remove("animate-spin");
 					spin.classList.add("invisible");
 					document.getElementById("submit-to-google-sheet").reset();
