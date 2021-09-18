@@ -226,7 +226,7 @@
 							</div>
 							<h3 class="text-3xl font-semibold">A growing consultancy</h3>
 							<p class="mt-4 text-lg leading-relaxed text-gray-600">
-								Stepping into the sixth year, our consulting has helped scholars from various
+								Stepping into the sixth year, our consultancy has helped scholars from various
 								disciplines
 								across the globe to produce 108 theses and 1217 research articles.
 							</p>
@@ -480,6 +480,7 @@
 			fetch(scriptURL, { method: 'POST', body: new FormData(form) })
 				.then(response => {
 					console.log('Success!', response)
+					alert("Successfully Submitted");
 					spin.classList.remove("animate-spin");
 					spin.classList.add("invisible");
 					document.getElementById("submit-to-google-sheet").reset();
