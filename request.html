@@ -306,6 +306,7 @@
 			fetch(scriptURL1, { method: 'POST', body: new FormData(form1) })
 				.then(response => {
 					console.log('Success!', response)
+					alert("Successfully Submitted");
 					spin.classList.remove("animate-spin");
 					spin.classList.add("invisible");
 					document.getElementById("submit-to-google-sheet1").reset();
