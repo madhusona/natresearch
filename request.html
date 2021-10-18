@@ -12,9 +12,9 @@
 
 <body class="text-gray-800 antialiased">
 	<nav class="bg-white shadow-lg">
-		<div class="max-w-6xl mx-auto px-4">
+		<div class="">
 			<div class="flex justify-between">
-				<div class="flex space-x-7">
+				<div class="flex">
 					<div>
 						<!-- Website Logo -->
 						<a href="#" class="flex items-center py-4 px-2">
@@ -24,24 +24,29 @@
 					</div>
 					<!-- Primary Navbar items -->
 					<div class="hidden md:flex items-center space-x-1">
-						<a href="" class="py-4 px-2 text-green-500 border-b-4 border-green-500 font-semibold ">Home</a>
-						<a href=""
-							class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300">Services</a>
-						<a href=""
+		
+						<a href="index.html#about"
 							class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300">About</a>
-						<a href=""
+							<a href="index.html#corevalues"
+							class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300">Core Values</a>
+							<a href="#service"
+							class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300">Services</a>
+							<a href="#feature"
+							class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300">Our Features</a>
+					
+							<a href="index.html#contact"
 							class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300">Contact
 							Us</a>
 					</div>
 				</div>
 				<!-- Secondary Navbar items -->
-				<div class="hidden md:flex items-center space-x-3 ">
-					<a href=""
-						class="py-2 px-2 font-medium text-gray-500 rounded hover:bg-green-500 hover:text-white transition duration-300">Log
-						In</a>
-					<a href=""
-						class="py-2 px-2 font-medium text-white bg-green-500 rounded hover:bg-green-400 transition duration-300">Request
-						a quote
+				<div class="hidden md:flex items-center text-sm space-x-0.5">
+					<a href="request.html"
+					class="py-2 px-2 font-medium text-white bg-blue-500 rounded hover:bg-blue-400 transition duration-300">Request
+					a quote
+				</a>
+					<a href="https://pages.razorpay.com/pl_Gy5u2SUUqTnRkG/view" target="_blank"
+						class="py-2 px-2 font-medium text-white bg-green-500 rounded hover:bg-green-400 transition duration-300"> Pay Now
 					</a>
 				</div>
 				<!-- Mobile menu button -->
@@ -61,11 +66,18 @@
 			<ul class="">
 				<li class="active"><a href="index.html"
 						class="block text-sm px-2 py-4 text-white bg-green-500 font-semibold">Home</a></li>
-				<li><a href="#services"
-						class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Services</a></li>
+				
 				<li><a href="#about"
 						class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">About</a></li>
-				<li><a href="#contact"
+						<li><a href="index.html#corevalues"
+							class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Core Values</a></li>
+				
+				<li><a href="#service"
+							class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Services</a></li>
+							<li><a href="#feature"
+								class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Our Features</a></li>
+		
+							<li><a href="#contact"
 						class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Contact Us</a></li>
 			</ul>
 		</div>
@@ -73,61 +85,74 @@
 	</nav>
 
 	<div class="relative pt-16 pb-32 flex content-center items-center justify-center">
-		
+
 		<div class="container relative mx-auto">
 			<div class="items-center flex flex-wrap">
 				<div class="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
 					<div class="pr-12">
-						<h1 class="text-blue-600 font-semibold text-5xl">
+						<h1 class="text-green-500 font-semibold text-5xl">
 							Request a Quote
 						</h1>
-						<p class="mt-4 text-lg text-green">
+						<p class="mt-4 text-lg text-green mb-8">
 							Economy, Originality, Punctuality and Quality
 						</p>
+						<div class="space-x-0.5">
+							<a href="request.html"
+						class="md:hidden py-2 px-2 font-medium text-white bg-blue-500 rounded hover:bg-blue-400 transition duration-300">Request
+						a quote
+					</a>
+	
+							<a href="https://pages.razorpay.com/pl_Gy5u2SUUqTnRkG/view" target="_blank"
+							class="md:hidden py-2 px-2 mt-10 font-medium text-white bg-green-500 rounded hover:bg-green-400 transition duration-300"> Pay Now
+						</a>
+					</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	
+
 	</div>
 
 	<div class="antialiased text-gray-900 px-6">
 
-		 
-		  <div class="py-2">
-		
-			<div class="mt-8">
-			  <div class="grid grid-cols-1 gap-6 sm:grid-cols-2">
-				<label class="block">
-				  <span class="text-gray-700 ">Full name</span>
-				  <input type="text" class="mt-1 block w-full border border-gray-300" placeholder="" />
-				</label>
-				<label class="block">
-				  <span class="text-gray-700">Email address</span>
-				  <input type="email" class="mt-1 block w-full border border-gray-300" placeholder="john@example.com" />
-				</label>
-				<label class="block">
-				  <span class="text-gray-700">Phone number</span>
-				  <input type="text" class="mt-1 block w-full border border-gray-300" />
-				</label>
-				<label class="block">
-					<span class="text-gray-700">Department</span>
-					<input type="text" class="mt-1 block w-full border border-gray-300" />
-				  </label>
-				  <label class="block">
-					<span class="text-gray-700">Title Thesis</span>
-					<input type="text" class="mt-1 block w-full border border-gray-300" />
-				  </label>
-				  <label class="block">
-					<span class="text-gray-700">Serives Required</span>
-					<select class="block w-full mt-1">
-					  <option>Thesis Writing</option>
-					  <option>Chapter Writing</option>
-					  <option>Writing of Research Paper</option>
-					  <option>Other</option>
-					</select>
-				  </label>
-				  <div>
+		<form id="submit-to-google-sheet1" name="submit-to-google-sheet1">
+			<div class="py-2">
+
+				<div class="mt-8">
+					<div class="grid grid-cols-1 gap-6 sm:grid-cols-2">
+						<label class="block">
+							<span class="text-gray-700 ">Full name</span>
+							<input name="name" type="text" class="mt-1 block w-full border border-gray-300"
+								placeholder="" />
+						</label>
+						<label class="block">
+							<span class="text-gray-700">Email address</span>
+							<input name="email" type="email" class="mt-1 block w-full border border-gray-300"
+								placeholder="john@example.com" />
+						</label>
+						<label class="block">
+							<span class="text-gray-700">Phone number</span>
+							<input name="mobile" type="text" class="mt-1 block w-full border border-gray-300" />
+						</label>
+						<label class="block">
+							<span class="text-gray-700">Department</span>
+							<input name="department" type="text" class="mt-1 block w-full border border-gray-300" />
+						</label>
+						<label class="block">
+							<span class="text-gray-700">Title of the Thesis</span>
+							<input name="title" type="text" class="mt-1 block w-full border border-gray-300" />
+						</label>
+						<label class="block">
+							<span class="text-gray-700">Serives Required</span>
+							<select class="block w-full mt-1" name="service">
+								<option name="service" value="Thesis Writing">Thesis Writing</option>
+								<option name="service" value="Publication of Papers">Publication of Papers</option>
+								<option name="service" value="Writing of Research Paper">Writing of Research Paper
+								</option>
+								<option name="service" value="Other">Other</option>
+							</select>
+						</label>
+						<!--  <div>
 					<label class="block text-sm font-medium text-gray-700">
 					  Upload 
 					</label>
@@ -148,69 +173,100 @@
 						</p>
 					  </div>
 					</div>
-				  </div>
-				
-				
-				
-			  </div>
-			</div>
-		  </div>
-		
-		  
-		  <a class="text-green-500" href="#" onclick="toggleModal('modal-id')">Terms and Conditions</a>
-		  <div class="hidden overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none justify-center items-center" id="modal-id">
-			<div class="relative w-auto my-6 mx-auto max-w-3xl">
-			  <!--content-->
-			  <div class="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
-				<!--header-->
-				<div class="flex items-start justify-between p-5 border-b border-solid border-blueGray-200 rounded-t">
-				  <h3 class="text-3xl font-semibold">
-					Terms and Conditions
-				  </h3>
-				  <button class="p-1 ml-auto bg-transparent border-0 text-black opacity-5 float-right text-3xl leading-none font-semibold outline-none focus:outline-none" onclick="toggleModal('modal-id')">
-					<span class="bg-transparent text-black opacity-5 h-6 w-6 text-2xl block outline-none focus:outline-none">
-					  ×
-					</span>
-				  </button>
-				</div>
-				<!--body-->
-				<div class="relative p-6 flex-auto">
-					<ul class="list-disc list-inside bg-rose-200">
-						<li>40% of the fixed amount to be paid in advance</li>
-						<li>The data of the commencement of the assignment will be counted from the date of payment only not from the data of oral confirmation by the clients.</li>
-						<li>The works will be sent only through mail after the confirmation of payment.</li>
-					<li>No refund will be given if the clients cancel the project for their personal reasons.</li>
-				<li>Under no circumstance the client cannot request an advancement of the date of completion. We humbly request our clients to understand the complex nature of work.</li>	
-			<li>For plagiarism removal, the content would be checked through the software mentioned by the client and after removal, plagiarism report will be generated from the same software and given. The client cannot request for a plagiarism free report from different software after getting the report. Incase if the client need such report, amount shall be payable for the same separately.</li>	
-		<li>In case if the client needs a plagiarism report after plagiarism removal, the same should be requested at the time of initial discussion with our consultant. After getting the modified copy, the client shall not request for a plagiarism report. If so, scanning charges are to be paid separately.</li>
-	<li>Publication of research papers are purely in the hands of publisher. Hence, we cannot so anything on this area to get your paper accepted.</li>	
-	</ul>
-				</div>
-				<!--footer-->
-				<div class="flex items-center justify-end p-6 border-t border-solid border-blueGray-200 rounded-b">
-				  <button class="text-red-500 background-transparent font-bold uppercase px-6 py-2 text-sm outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button" onclick="toggleModal('modal-id')">
-					Close
-				  </button>
-				
-				</div>
-			  </div>
-			</div>
-		  </div>
-		  <div class="hidden opacity-25 fixed inset-0 z-40 bg-black" id="modal-id-backdrop"></div>
-		  <script type="text/javascript">
-			function toggleModal(modalID){
-			  document.getElementById(modalID).classList.toggle("hidden");
-			  document.getElementById(modalID + "-backdrop").classList.toggle("hidden");
-			  document.getElementById(modalID).classList.toggle("flex");
-			  document.getElementById(modalID + "-backdrop").classList.toggle("flex");
-			}
-		  </script>
-	  </div>
-  
-	
-	
+				  </div>-->
 
-	<div class="px-4 mt-4 pb-5 sm:w-1/3 xl:w-1/6 sm:mx-auto xl:mt-0 xl:ml-auto">
+						<a class="justify-items-start text-green-500" href="#" onclick="toggleModal('modal-id')">Terms
+							and
+							Conditions</a>
+
+					</div>
+
+				</div>
+			</div>
+
+
+
+			<div class="flex justify-center">
+
+				<button
+					class="text-white bg-purple-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg text-center"
+					type="submit">
+					<i class="fas fa-spinner" id="spinner"></i>
+					Submit</button>
+			</div>
+		</form>
+		<div class="hidden overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none justify-center items-center"
+			id="modal-id">
+			<div class="relative w-auto my-6 mx-auto max-w-3xl">
+				<!--content-->
+				<div
+					class="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
+					<!--header-->
+					<div
+						class="flex items-start justify-between p-5 border-b border-solid border-blueGray-200 rounded-t">
+						<h3 class="text-3xl font-semibold">
+							Terms and Conditions
+						</h3>
+						<button
+							class="p-1 ml-auto bg-transparent border-0 text-black opacity-5 float-right text-3xl leading-none font-semibold outline-none focus:outline-none"
+							onclick="toggleModal('modal-id')">
+							<span
+								class="bg-transparent text-black opacity-5 h-6 w-6 text-2xl block outline-none focus:outline-none">
+								×
+							</span>
+						</button>
+					</div>
+					<!--body-->
+					<div class="relative p-6 flex-auto">
+						<ul class="list-disc list-inside bg-rose-200">
+							<li>40% of the fixed amount to be paid in advance</li>
+							<li>The data of the commencement of the assignment will be counted from the date of payment
+								only not from the data of oral confirmation by the clients.</li>
+							<li>The works will be sent only through mail after the confirmation of payment.</li>
+							<li>No refund will be given if the clients cancel the project for their personal reasons.
+							</li>
+							<li>Under no circumstance the client cannot request an advancement of the date of
+								completion. We humbly request our clients to understand the complex nature of work.</li>
+							<li>For plagiarism removal, the content would be checked through the software mentioned by
+								the client and after removal, plagiarism report will be generated from the same software
+								and given. The client cannot request for a plagiarism free report from different
+								software after getting the report. Incase if the client need such report, amount shall
+								be payable for the same separately.</li>
+							<li>In case if the client needs a plagiarism report after plagiarism removal, the same
+								should be requested at the time of initial discussion with our consultant. After getting
+								the modified copy, the client shall not request for a plagiarism report. If so, scanning
+								charges are to be paid separately.</li>
+							<li>Publication of research papers are purely in the hands of publisher. Hence, we cannot so
+								anything on this area to get your paper accepted.</li>
+						</ul>
+					</div>
+					<!--footer-->
+					<div class="flex items-center justify-end p-6 border-t border-solid border-blueGray-200 rounded-b">
+						<button
+							class="text-red-500 background-transparent font-bold uppercase px-6 py-2 text-sm outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+							type="button" onclick="toggleModal('modal-id')">
+							Close
+						</button>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="hidden opacity-25 fixed inset-0 z-40 bg-black" id="modal-id-backdrop"></div>
+		<script type="text/javascript">
+			function toggleModal(modalID) {
+				document.getElementById(modalID).classList.toggle("hidden");
+				document.getElementById(modalID + "-backdrop").classList.toggle("hidden");
+				document.getElementById(modalID).classList.toggle("flex");
+				document.getElementById(modalID + "-backdrop").classList.toggle("flex");
+			}
+		</script>
+	</div>
+
+
+
+
+	<div class="px-4 mt-6 pb-5 sm:w-1/3 xl:w-1/6 sm:mx-auto xl:mt-0 xl:ml-auto">
 		<h5 class="text-xl font-bold mb-6 sm:text-center xl:text-left">Stay connected</h5>
 		<div class="flex sm:justify-center xl:justify-start">
 			<a href=""
@@ -227,16 +283,41 @@
 			</a>
 		</div>
 	</div>
+	<script>
+		const spin = document.getElementById("spinner");
+		spin.classList.add("invisible");
+		const btn = document.querySelector("button.mobile-menu-button");
+		const menu = document.querySelector(".mobile-menu");
 
+		btn.addEventListener("click", () => {
+			menu.classList.toggle("hidden");
+		});
+
+		const scriptURL1 = 'https://script.google.com/macros/s/AKfycbxF0aEL2VcqMhLbYkTE--9r5VdpEYHOrWOmRPARisIuj7F19SuYewUbhlU4wsyWO3NH/exec'
+		const form1 = document.forms['submit-to-google-sheet1']
+
+
+		form1.addEventListener('submit', e => {
+			// visible();
+
+			spin.classList.remove("invisible");
+			spin.classList.add("animate-spin");
+			e.preventDefault()
+			fetch(scriptURL1, { method: 'POST', body: new FormData(form1) })
+				.then(response => {
+					console.log('Success!', response)
+					alert("Successfully Submitted");
+					spin.classList.remove("animate-spin");
+					spin.classList.add("invisible");
+					document.getElementById("submit-to-google-sheet1").reset();
+					//   invisible();
+				}
+
+				)
+				.catch(error => console.error('Error!', error.message))
+		})
+	</script>
 </body>
-<script>
-	const btn = document.querySelector("button.mobile-menu-button");
-	const menu = document.querySelector(".mobile-menu");
 
-	btn.addEventListener("click", () => {
-		menu.classList.toggle("hidden");
-	});
-
-</script>
 
 </html>
